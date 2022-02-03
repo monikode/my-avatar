@@ -1,0 +1,189 @@
+html {
+  --canvas-size: 700px;
+
+  --shoulder-height: 20%;
+  --shoulder-width: 66%;
+
+  --face-height: 50%;
+  --face-width: 50%;
+
+  --nose-height: 20%;
+  --nose-width: 10%;
+
+  --iris-height: 70%;
+  --iris-width: 50%;
+
+  --mouth-height: 10%;
+  --mouth-width: 30%;
+}
+#app {
+  display: flex;
+}
+.canvas {
+  position: relative;
+  height: var(--canvas-size);
+  width: var(--canvas-size);
+  background-color: cornsilk;
+}
+
+#form {
+}
+#body {
+}
+
+#shoulder {
+  position: absolute;
+  bottom: 0;
+  left: calc(var(--canvas-size) / 2 - var(--shoulder-width) / 2);
+
+  height: var(--shoulder-height);
+  width: var(--shoulder-width);
+
+  background-color: chocolate;
+  border-radius: 50px 50px 0 0;
+}
+
+#neck {
+}
+
+#face {
+  position: absolute;
+  bottom: calc(var(--shoulder-height) + 10%);
+  left: calc(var(--canvas-size) / 2 - var(--face-width) / 2);
+  height: var(--face-height);
+  width: var(--face-width);
+  background-color: chocolate;
+  border-radius: 100%;
+}
+
+#face .container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#eyes {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  left: 0;
+  bottom: 40%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 10%;
+}
+
+#eyes > * {
+  position: relative;
+  height: 100%;
+  width: 30%;
+  background-color: rgb(158, 179, 186);
+  border-radius: 100%;
+  overflow: hidden;
+  box-shadow: inset 0 20px 10px #28505c5f;
+}
+
+#eyes .iris {
+  position: absolute;
+  margin: 0 auto;
+  height: var(--iris-height);
+  width: var(--iris-width);
+  background-color: violet;
+  border-radius: 100%;
+
+  left: calc(50% - 33% / 2);
+  filter: blur(4px);
+  /* bottom: calc( 50% - 70% / 2); */
+  /* transition: all 0.2s; */
+  
+}
+
+#eyes  > *:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(50% - 2.5px);
+    left: calc(70% - 2.5px);
+    height: 5px;
+    width: 8px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+#eyes .iris:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    height: 18px;
+    width: 12px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+}
+
+
+#nose {
+  position: absolute;
+  left: calc(50% - var(--nose-width) / 2);
+  background-color: rgba(130, 51, 22, 0.618);
+  margin: 0 auto;
+  bottom: 30%;
+  width: var(--nose-width);
+  height: 50px;
+  font-size: 50px;
+  text-align: center;
+}
+#lips {
+    position: absolute;
+    left: calc(50% - var(--mouth-width) / 2);
+    margin: 0 auto;
+    bottom: 10%;
+    width: var(--mouth-width);
+    height: var(--mouth-height);
+    font-size: 50px;
+}
+#lips .container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#lips .color {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+#line {
+    position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 50%;
+  background-color: rgba(130, 51, 22, 0.618);
+}
+/* FORM  */
+#form {
+    flex: 1;
+}
+.eye-color-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+
+.eye-color-list > * {
+  height: 50px;
+  width: 50px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.eye-color-list > *:hover {
+  transform: scale(1.2);
+}
+
+#form img{
+    width: 300px;
+    height: 300px;
+}

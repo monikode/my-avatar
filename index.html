@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PicKrew</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="canvas" id="capture">
+     
+        <face> </face>
+        <shoulder></shoulder>
+      </div>
+      {{text}}
+      <custom-form v-model:eye-color="face.eye.color"></form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js" integrity="sha512-wUa0ktp10dgVVhWdRVfcUO4vHS0ryT42WOEcXjVVF2+2rcYBKTY7Yx7JCEzjWgPV+rj2EDUr8TwsoWF6IoIOPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="js/index.js"></script>
+    <script src="js/nose.js"></script>
+    <script src="js/face.js"></script>
+    <script src="js/body.js"></script>
+    <script src="js/eyes.js"></script>
+    <script src="js/lips.js"></script>
+    <script src="js/form.js"></script>
+    <script>
+      app.mount("#app");
+    </script>
+  </body>
+</html>
