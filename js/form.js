@@ -2,26 +2,37 @@ app.component("custom-form", {
   data() {
     return {
       eyeColors: ["#000", "blue", "indigo", "red", "green", "brown"],
-      skinColors: ["#C4A399", "#86675D", "#CCB2AD", "#6C4F49", "#442721", "#7D4D42"],
+      skinColors: [
+        "#C4A399",
+        "#86675D",
+        "#CCB2AD",
+        "#6C4F49",
+        "#442721",
+        "#7D4D42",
+      ],
+      lipColors: ["#000", "blue", "indigo", "red", "green", "brown"],
     };
   },
   template: `
         <div id="form">
      <h2>Eyes</h2>
      <div class="eye-color-list">
-     <div v-for="color in eyeColors" :style="{backgroundColor: color}"
-     @click="$emit('update:eye-color', color)">
-     
+        <div v-for="color in eyeColors" :style="{backgroundColor: color}"
+        @click="$emit('update:eye-color', color)">
+        </div>
      </div>
-     
-     </div>
-     <h2 @click="$emit('update:title', 'Skin')">Skin</h2>
+     <h2 >Skin</h2>
      <div class="eye-color-list">
-     <div v-for="color in skinColors" :style="{backgroundColor: color}"
-     @click="$emit('update:skin-color', color)">
-     
+        <div v-for="color in skinColors" :style="{backgroundColor: color}"
+        @click="$emit('update:skin-color', color)">
+        </div>
      </div>
-     
+
+     <h2>Lips</h2>
+     <div class="eye-color-list">
+        <div v-for="color in lipColors" :style="{backgroundColor: color}"
+        @click="$emit('update:lip-color', color)">
+        </div>
      </div>
 
      <button @click="capture()">Capture</button>

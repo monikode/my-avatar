@@ -2,7 +2,6 @@ const app = Vue.createApp({
   el: "#app",
   data() {
     return {
-      text: "aaaa",
       skin: {
         body: {
           type: "",
@@ -17,7 +16,7 @@ const app = Vue.createApp({
         nose: {},
         lips: {
           type: "",
-          color: "",
+          color: "#9F3C3C",
         },
       },
       hair: {},

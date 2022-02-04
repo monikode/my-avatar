@@ -146,7 +146,7 @@ app.component("eyes", {
 
         let widthPercent = (x / width).toFixed(2) * 100;
         if (widthPercent > 100) widthPercent = 100;
-        widthPercent+=20
+        widthPercent+=30
         this.x = `${(widthPercent * (100 - this.iris.width)) / 100}%`;
       }
     },
