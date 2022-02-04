@@ -6,7 +6,7 @@ const app = Vue.createApp({
       skin: {
         body: {
           type: "",
-          color: "",
+          color: "#C4A399",
         },
       },
 

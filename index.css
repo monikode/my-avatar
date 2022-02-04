@@ -8,12 +8,12 @@ html {
   --face-width: 50%;
 
   --nose-height: 20%;
-  --nose-width: 10%;
+  --nose-width: 18%;
 
   --iris-height: 70%;
   --iris-width: 50%;
 
-  --mouth-height: 10%;
+  --mouth-height: 13%;
   --mouth-width: 30%;
 }
 #app {
@@ -53,8 +53,12 @@ html {
   left: calc(var(--canvas-size) / 2 - var(--face-width) / 2);
   height: var(--face-height);
   width: var(--face-width);
-  background-color: chocolate;
-  border-radius: 100%;
+}
+
+#face svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 #face .container {
@@ -66,23 +70,21 @@ html {
 #eyes {
   position: absolute;
   width: 100%;
-  height: 60px;
+  height: 90px;
   left: 0;
-  bottom: 40%;
+  bottom: 34%;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 0 10%;
+  padding: 0 5%;
 }
 
-#eyes > * {
+#eyes .left,
+#eyes .right {
   position: relative;
   height: 100%;
-  width: 30%;
-  background-color: rgb(158, 179, 186);
-  border-radius: 100%;
+  width: 40%;
   overflow: hidden;
-  box-shadow: inset 0 20px 10px #28505c5f;
 }
 
 #eyes .iris {
@@ -90,82 +92,63 @@ html {
   margin: 0 auto;
   height: var(--iris-height);
   width: var(--iris-width);
-  background-color: violet;
-  border-radius: 100%;
 
   left: calc(50% - 33% / 2);
   filter: blur(4px);
   /* bottom: calc( 50% - 70% / 2); */
   /* transition: all 0.2s; */
-  
 }
 
-#eyes  > *:after{
-    content: '';
-    display: block;
-    position: absolute;
-    top: calc(50% - 2.5px);
-    left: calc(70% - 2.5px);
-    height: 5px;
-    width: 8px;
-    background-color: #fff;
-    border-radius: 100%;
+#eyes > *:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(50% - 2.5px);
+  left: calc(70% - 2.5px);
+  height: 5px;
+  width: 8px;
+  background-color: #fff;
+  border-radius: 100%;
 }
 
-#eyes .iris:after{
-    content: '';
-    display: block;
-    position: absolute;
-    top: calc(50% - 8px);
-    left: calc(50% - 6px);
-    height: 18px;
-    width: 12px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 100%;
+#eyes .iris:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  height: 18px;
+  width: 12px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 100%;
 }
-
 
 #nose {
   position: absolute;
   left: calc(50% - var(--nose-width) / 2);
-  background-color: rgba(130, 51, 22, 0.618);
   margin: 0 auto;
-  bottom: 30%;
+  bottom: 23%;
   width: var(--nose-width);
   height: 50px;
-  font-size: 50px;
-  text-align: center;
 }
 #lips {
-    position: absolute;
-    left: calc(50% - var(--mouth-width) / 2);
-    margin: 0 auto;
-    bottom: 10%;
-    width: var(--mouth-width);
-    height: var(--mouth-height);
-    font-size: 50px;
+  position: absolute;
+  left: calc(50% - var(--mouth-width) / 2);
+  margin: 0 auto;
+  bottom: 8%;
+  width: var(--mouth-width);
+  height: var(--mouth-height);
+  font-size: 50px;
 }
-#lips .container{
-    position: relative;
-    width: 100%;
-    height: 100%;
+
+#face .under-mouth {
+  bottom: -27%;
+  left: 5%;
 }
-#lips .color {
-    background-color: red;
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-}
-#line {
-    position: absolute;
-  width: 100%;
-  height: 3px;
-  bottom: 50%;
-  background-color: rgba(130, 51, 22, 0.618);
-}
+
 /* FORM  */
 #form {
-    flex: 1;
+  flex: 1;
 }
 .eye-color-list {
   display: grid;
@@ -184,13 +167,13 @@ html {
   transform: scale(1.2);
 }
 
-#form img{
-    width: 300px;
-    height: 300px;
+#form img {
+  width: 300px;
+  height: 300px;
 }
 
 @media only screen and (max-width: 1050px) {
-    #app {
-        display: block;
-    }
+  #app {
+    display: block;
+  }
 }
