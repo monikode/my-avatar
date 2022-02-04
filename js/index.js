@@ -11,7 +11,7 @@ const app = Vue.createApp({
 
       face: {
         eye: {
-          color: "#000",
+          color: "#423A3A",
         },
         nose: {},
         lips: {

@@ -1,16 +1,30 @@
 app.component("custom-form", {
   data() {
     return {
-      eyeColors: ["#000", "blue", "indigo", "red", "green", "brown"],
+      eyeColors: [
+        "#423A3A",
+        "#38619F",
+        "#4040A0",
+        "#8A4141",
+        "#46753F",
+        "#3F2C21",
+        "#A3A548",
+      ],
       skinColors: [
+        "#CCB2AD",
         "#C4A399",
         "#86675D",
-        "#CCB2AD",
+        "#7D4D42",
         "#6C4F49",
         "#442721",
-        "#7D4D42",
       ],
-      lipColors: ["#000", "blue", "indigo", "red", "green", "brown"],
+      lipColors: [  "#423A3A",
+      "#38619F",
+      "#4040A0",
+      "#8A4141",
+      "#46753F",
+      "#3F2C21",
+      "#A3A548",],
     };
   },
   template: `
