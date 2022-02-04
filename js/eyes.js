@@ -28,10 +28,9 @@ app.component("eyes", {
 </linearGradient>
 </defs>
 </svg>
-<svg width="55" height="33" viewBox="-11 -3 66 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_11_4" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="55" height="33">
+<svg width="100" height="33" viewBox="-11 -3 66 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_11_4" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="10" y="0" width="65" height="33">
 <path d="M29.8449 31.8957C45.7707 32.994 46.869 30.7973 54.5573 28.0515C54.0081 22.3768 50.3836 10.1488 40.279 6.63414C27.6483 2.24083 24.9025 -1.05416 10.075 0.593336C-1.7869 1.91133 -0.725182 2.24083 1.28842 2.24083C1.28842 5.53581 3.48507 10.4783 5.68173 13.5597C7.87838 16.6411 8.97671 19.8141 12.8209 24.2074C16.665 28.6007 24.5474 30.895 29.8449 31.8957Z" fill="#7C8996"/>
-<path d="M29.8449 31.8957C45.7707 32.994 46.869 30.7973 54.5573 28.0515C54.0081 22.3768 50.3836 10.1488 40.279 6.63414C27.6483 2.24083 24.9025 -1.05416 10.075 0.593336C-1.7869 1.91133 -0.725182 2.24083 1.28842 2.24083C1.28842 5.53581 3.48507 10.4783 5.68173 13.5597C7.87838 16.6411 8.97671 19.8141 12.8209 24.2074C16.665 28.6007 24.5474 30.895 29.8449 31.8957Z" fill="url(#paint0_linear_11_4)" fill-opacity="0.61"/>
 </mask>
 <g mask="url(#mask0_11_4)">
 <g filter="url(#filter0_f_11_4)">
@@ -44,10 +43,7 @@ app.component("eyes", {
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_11_4"/>
 </filter>
-<linearGradient id="paint0_linear_11_4" x1="24.9025" y1="40.6823" x2="24.9025" y2="3.88832" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white" stop-opacity="0"/>
-</linearGradient>
+
 </defs>
 </svg>
 
