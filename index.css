@@ -13,8 +13,8 @@ html {
   --iris-height: 70%;
   --iris-width: 50%;
 
-  --mouth-height: 16%;
-  --mouth-width: 30%;
+  --mouth-height: 13%;
+  --mouth-width: 28%;
 }
 #app {
   display: flex;
@@ -127,7 +127,7 @@ html {
   position: absolute;
   left: calc(50% - var(--nose-width) / 2);
   margin: 0 auto;
-  bottom: 23%;
+  bottom: 21%;
   width: var(--nose-width);
   height: 50px;
 }
@@ -142,8 +142,9 @@ html {
 }
 
 #face .under-mouth {
-  bottom: -27%;
+  bottom: -31%;
   left: 5%;
+  transform: scale(0.8);
 }
 
 /* FORM  */
