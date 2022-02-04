@@ -1,8 +1,18 @@
-app.component('shoulder', {
-    template: `
+app.component("shoulder", {
+  template: `
         <div id="body">
-            <div id="neck"> </div>
-            <div id="shoulder"> </div>
+            <div id="shoulder">
+            <svg viewBox="0 0 272 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M270 179L271.072 124.104C271.818 85.9327 237.33 54.568 199.929 46.9019C197.763 46.4578 195.603 46.0073 193.447 45.5574C184.02 43.5908 179 46.9019 165 38.5V0H105V41.1951C96 46.9019 90.6599 43.5451 82.9944 44.8315C79.7754 45.3718 76.5499 45.9131 73.3099 46.4402C38.7943 52.0557 1.93087 80.1394 1.24801 115.102L0 179H270Z" :fill="$root.skin.body.color"/>
+<path d="M270 179L271.072 124.104C271.818 85.9327 237.33 54.568 199.929 46.9019C197.763 46.4578 195.603 46.0073 193.447 45.5574C184.02 43.5908 179 46.9019 165 38.5V0H105V41.1951C96 46.9019 90.6599 43.5451 82.9944 44.8315C79.7754 45.3718 76.5499 45.9131 73.3099 46.4402C38.7943 52.0557 1.93087 80.1394 1.24801 115.102L0 179H270Z" fill="url(#paint0_linear_16_13)" fill-opacity="0.41"/>
+<defs>
+<linearGradient id="paint0_linear_16_13" x1="139.042" y1="1.39504e-08" x2="139" y2="65" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3D1717"/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
+ </div>
         </div>
-    `
-})
+    `,
+});

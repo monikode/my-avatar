@@ -1,7 +1,7 @@
 html {
   --canvas-size: 700px;
 
-  --shoulder-height: 20%;
+  --shoulder-height: 50%;
   --shoulder-width: 66%;
 
   --face-height: 50%;
@@ -37,11 +37,8 @@ html {
   bottom: 0;
   left: calc(var(--canvas-size) / 2 - var(--shoulder-width) / 2);
 
-  height: var(--shoulder-height);
   width: var(--shoulder-width);
 
-  background-color: chocolate;
-  border-radius: 50px 50px 0 0;
 }
 
 #neck {
@@ -49,7 +46,7 @@ html {
 
 #face {
   position: absolute;
-  bottom: calc(var(--shoulder-height) + 10%);
+  bottom: 26%;
   left: calc(var(--canvas-size) / 2 - var(--face-width) / 2);
   height: var(--face-height);
   width: var(--face-width);
