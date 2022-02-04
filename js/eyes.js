@@ -33,9 +33,21 @@ app.component("eyes", {
                     <path d="M29.8449 31.8957C45.7707 32.994 46.869 30.7973 54.5573 28.0515C54.0081 22.3768 50.3836 10.1488 40.279 6.63414C27.6483 2.24083 24.9025 -1.05416 10.075 0.593336C-1.7869 1.91133 -0.725182 2.24083 1.28842 2.24083C1.28842 5.53581 3.48507 10.4783 5.68173 13.5597C7.87838 16.6411 8.97671 19.8141 12.8209 24.2074C16.665 28.6007 24.5474 30.895 29.8449 31.8957Z" fill="#7C8996"/>
                     </mask>
                     <g mask="url(#mask0_11_4)">
-                    <g filter="url(#filter0_f_11_4)">
-                    <ellipse :cx="x" :cy="y" rx="17.5732" ry="15.9257":fill="$root.face.eye.color"/>
+                    <g opacity="0.8" filter="url(#filter2_f_11_6)">
+
+                        <ellipse :cx="x" :cy="y" rx="17.5732" ry="15.9257" fill="#000"/>
+
                     </g>
+                    <g filter="url(#filter1_f_11_4)">
+
+                    <ellipse :cx="x" :cy="y" rx="17.5732" ry="15.9257":fill="$root.face.eye.color"/>
+
+                </g>
+                <g opacity="0.8"  filter="url(#filter2_f_11_6)">
+
+                <ellipse :cx="x" :cy="y" rx="8.27586" ry="7.5"  fill="#000" style="transform: translate (50% 50%)"/>
+
+            </g>
                     </g>
                     <defs>
                     <filter id="filter0_f_11_4" x="-9" y="-6.15248" width="100" height="39.8515" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -43,6 +55,17 @@ app.component("eyes", {
                     <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
                     <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_11_4"/>
                     </filter>
+                    <filter id="filter1_f_11_4" x="-9" y="-6.15248" width="100" height="39.8515" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_11_4"/>
+                    </filter>
+                    <filter id="filter2_f_11_6" x="-9" y="-6.15248" width="100" height="39.8515" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feGaussianBlur stdDeviation="4" result="effect1_foregroundBlur_11_6"/>
+                    </filter>
+                  
 
                     </defs>
                 </svg>
@@ -89,15 +112,35 @@ app.component("eyes", {
     <path d="M25.1811 31.8957C9.25531 32.994 8.15698 30.7973 0.468687 28.0515C1.01785 22.3768 4.64233 10.1488 14.7469 6.63414C27.3777 2.24083 30.1235 -1.05416 44.9509 0.593336C56.8129 1.91133 55.7512 2.24083 53.7376 2.24083C53.7376 5.53581 51.5409 10.4783 49.3443 13.5597C47.1476 16.6411 46.0493 19.8141 42.2051 24.2074C38.361 28.6007 30.4786 30.895 25.1811 31.8957Z" fill="#7C8996"/>
     </mask>
     <g mask="url(#mask0_11_6)">
-    <g filter="url(#filter0_f_11_6)">
-    <ellipse :cx="x" :cy="y" rx="17.5732" ry="15.9257" :fill="$root.face.eye.color"/>
-    </g>
+    <g opacity="0.8" filter="url(#filter2_f_11_6)">
+
+    <ellipse :cx="x" :cy="y" rx="17.5732" ry="15.9257" fill="#000"/>
+
+</g>
+<g filter="url(#filter1_f_11_4)">
+
+<ellipse :cx="x" :cy="y" rx="17.5732" ry="15.9257":fill="$root.face.eye.color"/>
+
+</g>
+<g opacity="0.8"  filter="url(#filter2_f_11_6)">
+
+<ellipse :cx="x" :cy="y" rx="8.27586" ry="7.5"  fill="#000" style="transform: translate (50% 50%)"/>
     </g>
     <defs>
-    <filter id="filter0_f_11_6" x="-1" y="-6.15248" width="100" height="39.8515" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <filter id="filter0_f_11_4" x="-9" y="-6.15248" width="100" height="39.8515" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
     <feFlood flood-opacity="0" result="BackgroundImageFix"/>
     <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-    <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_11_6"/>
+    <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_11_4"/>
+    </filter>
+    <filter id="filter1_f_11_4" x="-9" y="-6.15248" width="100" height="39.8515" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_11_4"/>
+    </filter>
+    <filter id="filter2_f_11_6" x="-9" y="-6.15248" width="100" height="39.8515" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feGaussianBlur stdDeviation="4" result="effect1_foregroundBlur_11_6"/>
     </filter>
     </defs>
     </svg>
@@ -137,16 +180,16 @@ app.component("eyes", {
       let height = canvas.offsetHeight;
       let width = canvas.offsetWidth;
       if (y >= 0 && x >= 0) {
-        let heightPercent = (y / height).toFixed(2) * 100 ;
+        let heightPercent = (y / height).toFixed(2) * 100;
         if (heightPercent > 100) heightPercent = 100;
 
-        heightPercent+=100
+        heightPercent += 100;
 
         this.y = `${(heightPercent * (100 - this.iris.height)) / 100}%`;
 
         let widthPercent = (x / width).toFixed(2) * 100;
         if (widthPercent > 100) widthPercent = 100;
-        widthPercent+=30
+        widthPercent += 30;
         this.x = `${(widthPercent * (100 - this.iris.width)) / 100}%`;
       }
     },
