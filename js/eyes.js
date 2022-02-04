@@ -143,6 +143,8 @@ app.component("eyes", {
       let width = canvas.offsetWidth;
       if (y >= 0 && x >= 0) {
         let heightPercent = (y / height).toFixed(2) * 100 ;
+        if (heightPercent > 100) heightPercent = 100;
+
         heightPercent+=100
 
         this.y = `${(heightPercent * (100 - this.iris.height)) / 100}%`;
