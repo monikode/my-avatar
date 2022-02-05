@@ -1,11 +1,19 @@
 app.component("face", {
+  computed: {
+    faceList() {
+      return [
+        `<path d="M187 115.675C182.5 158.85 167.32 173.871 144.82 182.175C122.32 190.479 119.487 198 95.3204 198C76.2464 198 78.3204 191.548 56.3204 186.175C34.3204 180.802 10.3204 159.35 2.82038 118.175C-11.0822 41.8501 40.6442 0 95.3204 0C149.997 0 200 46.175 187 115.675Z" fill="${this.$root.skin.body.color}"/>`,
+        `<path d="M181 114.5C176.5 157.675 159.5 166 141.5 177.5C123.5 189 119.487 198 95.3204 198C76.2464 198 74.5 191.5 57.5 184C40.5 176.5 17.5 158.175 10 117C-3.90254 40.675 40.6442 0 95.3204 0C149.997 0 194 45 181 114.5Z" fill="${this.$root.skin.body.color}"/>`,
+      ];
+    },
+  },
   template: `
         <div id="face">
-        
+            <svg  v-html="faceList[$root.face.type]" width="190" height="198" viewBox="0 0 190 198" fill="none" xmlns="http://www.w3.org/2000/svg">
+            </svg>
+
             <svg width="190" height="198" viewBox="0 0 190 198" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M187 115.675C182.5 158.85 167.32 173.871 144.82 182.175C122.32 190.479 119.487 198 95.3204 198C76.2464 198 78.3204 191.548 56.3204 186.175C34.3204 180.802 10.3204 159.35 2.82038 118.175C-11.0822 41.8501 40.6442 0 95.3204 0C149.997 0 200 46.175 187 115.675Z" :fill="$root.skin.body.color"/>
-                <mask id="mask0_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="190" height="198">
-                <path d="M187 115.675C182.5 158.85 167.32 173.871 144.82 182.175C122.32 190.479 119.487 198 95.3204 198C76.2464 198 78.3204 191.548 56.3204 186.175C34.3204 180.802 10.3204 159.35 2.82038 118.175C-11.0822 41.8501 40.6442 0 95.3204 0C149.997 0 200 46.175 187 115.675Z" fill="#4B4B56"/>
+                <mask v-html="faceList[$root.face.type]" id="mask0_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="190" height="198">
                 </mask>
                 <g mask="url(#mask0_0_1)">
                 <g style="mix-blend-mode:hard-light" opacity="0.31" filter="url(#filter0_f_0_1)">

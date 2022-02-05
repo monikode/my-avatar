@@ -10,6 +10,7 @@ const app = Vue.createApp({
       },
 
       face: {
+        type: 0,
         eye: {
           color: "#423A3A",
         },

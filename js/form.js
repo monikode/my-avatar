@@ -29,6 +29,10 @@ app.component("custom-form", {
   },
   template: `
         <div id="form">
+     <h2>Face</h2>
+     <h3 @click="$emit('update:face-type', 0)">1</h3>
+     <h3 @click="$emit('update:face-type', 1)">2</h3>
+
      <h2>Eyes</h2>
      <div class="eye-color-list">
         <div v-for="color in eyeColors" :style="{backgroundColor: color}"
@@ -68,3 +72,4 @@ app.component("custom-form", {
     },
   },
 });
+
