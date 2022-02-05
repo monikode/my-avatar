@@ -21,6 +21,10 @@ const app = Vue.createApp({
         },
       },
       hair: {},
+      background: {
+        color: ''
+      }
     };
   },
-})
+ 
+});

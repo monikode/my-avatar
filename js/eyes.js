@@ -178,7 +178,6 @@ app.component("eyes", {
         </div>
     `,
   mounted() {
-    console.log(this.$root);
     this.iris.height = parseInt(
       getComputedStyle(document.documentElement).getPropertyValue(
         "--iris-height"

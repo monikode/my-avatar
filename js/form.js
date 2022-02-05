@@ -47,11 +47,14 @@ app.component("custom-form", {
      </div>
 
      <h2>Lips</h2>
+     
      <div class="eye-color-list">
         <div v-for="color in lipColors" :style="{backgroundColor: color}"
         @click="$emit('update:lip-color', color)">
         </div>
      </div>
+     <h2>Background</h2>
+     <input type="color" @ @input="$emit('update:background-color', $event.target.value)">
 
      <button @click="capture()">Capture</button>
      <img id="final">
@@ -60,6 +63,8 @@ app.component("custom-form", {
   methods: {
     capture() {
       const canvas = document.getElementById("capture");
+      const nose = document.getElementById('nose')
+      nose.click()
       domtoimage
         .toJpeg(canvas, { cacheBust: true })
         .then(function (dataUrl) {
